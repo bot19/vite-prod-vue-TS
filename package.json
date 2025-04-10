@@ -1,0 +1,20 @@
+{
+  "name": "vite-prod-vue-ts",
+  "version": "1.0.0",
+  "description": "Use npm, setup vite for production env for Vue with TS &amp; code quality tooling.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bot19/vite-prod-vue-TS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bot19/vite-prod-vue-TS/issues"
+  },
+  "homepage": "https://github.com/bot19/vite-prod-vue-TS#readme"
+}
