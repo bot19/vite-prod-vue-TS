@@ -7,7 +7,6 @@ Use npm, setup vite for production env for Vue with TS &amp; code quality toolin
 1. vite `v6.2`
 2. vue `v3.5`
 3. typescript `v5.7`
-
 4. eslint `v9.24`
 5. prettier `v3.5`
 6. eslint-plugin-jsx-a11y `v6.10`
