@@ -7,6 +7,7 @@ import vuePlugin from "eslint-plugin-vue";
 import vueParser from "vue-eslint-parser";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
+import pluginVueA11y from "eslint-plugin-vuejs-accessibility";
 
 export default defineConfig([
   globalIgnores([
@@ -71,7 +72,16 @@ export default defineConfig([
       ],
     },
   },
+  // A11y
+  ...pluginVueA11y.configs["flat/recommended"],
   // Prettier - make eslint and prettier work together
   eslintConfigPrettier,
   eslintPluginPrettierRecommended,
+  // rule overrides
+  {
+    rules: {
+      // override/add rules settings here, such as:
+      // "vuejs-accessibility/alt-text": "error"
+    },
+  },
 ]);
