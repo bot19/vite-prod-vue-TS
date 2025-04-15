@@ -5,6 +5,8 @@ import tseslintPlugin from "@typescript-eslint/eslint-plugin";
 import tseslintParser from "@typescript-eslint/parser";
 import vuePlugin from "eslint-plugin-vue";
 import vueParser from "vue-eslint-parser";
+import eslintConfigPrettier from "eslint-config-prettier/flat";
+import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 
 export default defineConfig([
   globalIgnores([
@@ -69,4 +71,7 @@ export default defineConfig([
       ],
     },
   },
+  // Prettier - make eslint and prettier work together
+  eslintConfigPrettier,
+  eslintPluginPrettierRecommended,
 ]);
