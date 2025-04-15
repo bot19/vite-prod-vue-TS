@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc -b && vite build",
+    "build": "npm run lint && vite build",
     "preview": "vite preview",
     "lint": "npm run eslint && npm run type-check",
     "type-check": "vue-tsc -b",
